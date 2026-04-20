@@ -3,6 +3,7 @@ name: Release
 # There are two kinds of formal release:
 # 1. The tag('v*.*.*') push release: the release workflow will be triggered by the tag push event.
 # 2. The scheduled release(the version will be '${{ env.NEXT_RELEASE_VERSION }}-nightly-YYYYMMDD'): the release workflow will be triggered by the schedule event.
+on:
   workflow_dispatch:
   push:
     tags:
